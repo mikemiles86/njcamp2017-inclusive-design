@@ -16,7 +16,8 @@
 
 		<link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/miles.css" id="theme">
-    <link rel="stylesheet" href="css/miles-color.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/custom.css">
 
     <!-- Code syntax highlighting -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -60,12 +61,61 @@
 			<div class="slides">
         <section>
           <h1>Inclusive Design</h1>
-          <h3><a href="https://nedcamp.org/new-england-drupal-camp/sessions/inclusive-design" target="_blank">nedcamp.org/node/366</a></h3>
+          <h3><a href="//nedcamp.org/new-england-drupal-camp/sessions/inclusive-design" target="_blank">nedcamp.org/node/366</a></h3>
           <h3>NEDCamp 2016</h3>
           <h3>#NEDCamp</h3>
         </section>
         <!-- Why should you use IDX? //-->
         <section>
+          <section>
+            <h2 class="overlay-text">ADA &sect;604.3.1</h2>
+          </section>
+          <section data-background="/images/handicap_stall.jpg" data-background-size="100%">
+            <blockquote class="overlay-text fragment">
+              <p>"Clearance around a water closet shall be 60 inches (1525 mm) minimum measured perpendicular from the side wall and 56 inches (1420 mm) minimum measured perpendicular from the rear wall."</p>
+              <p style="font-size:70%">- <cite>2010 ADA Standards for Accessible Design &sect;604.3.1</cite></p>
+            </blockquote>
+            <p class="cite cite-overlay" style="font-size:70%">Image by: <cite><a href="https://flic.kr/p/7kpEq">Lee Brimelow</a></cite></p>
+            <aside class="notes">
+              <ul>
+                <li>airport, stroller, bike to work</li>
+                <li>"This is our bathroom. The only stall is a handicapped toilet so it's very luxurious."</li>
+              </ul>
+            </aside>
+          </section>
+          <section>
+            <h2>Inclusive Design is...</h2>
+            <p class="fragment">The design of products, services and/of environments for as many people as is reasonably possible.</p>
+            <aside class="notes">
+              <ul>
+                <li>Classic deffinition</li>
+                <li>True in life and in digital</li>
+                <li>What does this mean?</li>
+              </ul>
+            </aside>
+          </section>
+          <section data-transition="fade">
+            <h2>Inclusive Design vs. Accessibility</h2>
+            <div style="width:600px;height:600px;display:inline-block">
+            <div class="fragment" data-fragment-index="2" style="width:75%;height:75%;background:#99ccff;border-radius:50%;display:inline-block;padding:5px;">
+              <span style="border-top:1px #fff solid;margin-left:70%;margin-top:10%;padding-left:50%;display:inline-block;font-size:80%;">Inclusive Design</span>
+            </div>
+            <div class="fragment" data-fragment-index="1" style="width:40%;height:40%;background:#003366;border-radius:50%;display:inline-block;margin-left:30%;margin-top:10%;top:-60%;position:relative;">
+              <p style="border-top:2px #fff solid;margin-left:60%;margin-top:25%;padding-left:75%;display:inline-block;font-size:80%;">Accessibility</p>
+            </div>
+          </div>
+        </section>
+        <section data-transition="fade">
+          <h2>Inclusive Design vs. Accessibility</h2>
+          <div style="width:600px;height:600px;display:inline-block">
+            <div style="overflow:hidden;width:100%;height:50%;display:inline-block;">
+              <div class="" data-fragment-index="2" style="width:100%;height:90%;background:#99ccff;position:relative;top:45%;display:inline-block; transform: skewY(-15deg)">
+              </div>
+              <div style="width:50%;height:90%;background:#003366;position:relative;bottom:35%;left:-25%;display:inline-block;transform: skewY(-15deg)">
+              </div>
+            </div>
+          </div>
+        </section>
           <section>
             <ul>
               <li>What problems does it solve?</li>
@@ -79,13 +129,6 @@
                   <li>Why does it matter?</li>
                 </ul>
               </li>
-              <li>Examples of using IDX in the real world
-                <ul>
-                  <li>handicap bathroom</li>
-                  <li>wheelchair ramps</li>
-                  <li>audible walk signals</li>
-                </ul>
-              </li>
               <li>Digital examples of using IDX
                 <ul>
                   <li>no mouse navigation</li>
@@ -97,17 +140,24 @@
                   <li>Tim berners quote about the internet for everyone</li>
                 </ul>
               </li>
-
             </ul>
           </section>
         </section>
         <!-- How do you use and implement IDX? //-->
         <section>
           <section>
+            <h2>Giving users choices</h2>
+          </section>
+          <section>
             <ul>
               <li>Sara leren example, excluding no gender
                 <ul>
                   <li>FB example, d.o example</li>
+                  <li>What are they doing?
+                    <ul>
+                      <li>Giving users choices</li>
+                    </ul>
+                  </li>
                 </ul>
               </li>
               <li>IDX is a scale, like accessibility</li>
@@ -187,27 +237,7 @@
 
 
 
-        <section>
-          <section>
-            <h2>Inclusive Design vs. Accessibility</h2>
-            <div style="width:600px;height:600px;display:inline-block">
-            <div class="fragment" data-fragment-index="2" style="width:75%;height:75%;background:#99ccff;border-radius:50%;display:inline-block;padding:5px;">
-              <span style="border-top:1px #fff solid;margin-left:70%;margin-top:10%;padding-left:50%;display:inline-block;font-size:80%;">Inclusive Design</span>
-            </div>
-            <div class="fragment" data-fragment-index="1" style="width:40%;height:40%;background:#003366;border-radius:50%;display:inline-block;margin-left:30%;margin-top:10%;top:-60%;position:relative;">
-              <p style="border-top:2px #fff solid;margin-left:60%;margin-top:25%;padding-left:75%;display:inline-block;font-size:80%;">Accessibility</p>
-            </div>
-<!--
-            <div style="width:20%;height:20%;background:#0000ff;border-radius:50%;display:inline-block;margin-top:10%;top:-50%;position:relative;right:30%">
-              <p style="border-top:2px #fff solid;margin-left:60%;margin-top:25%;padding-left:75%;display:inline-block;font-size:80%;">
-                <span style="border:2px #fff solid;border-radius:10px;background:#fff;color:#000;position:relative;top:-15px;padding:2px;">Website</span>
-                </p>
-            </div>//-->
-          </div>
-          <br />
-          <span>Universal design describes a set of considerations made to ensure that a product, service, and/or environment is usable by everyone, to the greatest extent possible, without the need for adaptation or specialized design. Accessibility is only slightlydifferent, describing the degree to which a product, service, and/or environment is made available to everyone. </span>
-        </section>
-      </section>
+
 
 
         <section>

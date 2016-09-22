@@ -1,0 +1,22 @@
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+body {
+  background-size: 100% !important;
+  background-image: url('../../images/background.jpg') !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.step-note {
+  font-size: 75% !important;
+  font-style: italic !important;
+}
+
+/*********************************************
+ * OTHER
+ *********************************************/
+.reveal .overlay-text {
+  padding:2% 0 2% 0;
+  background: rgba(0, 0, 0, 0.7);
+}
