@@ -58,7 +58,7 @@
     </div>
 
 			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
+			<div class="slides" data-skip-types="live" data-captions-aside>
         <section>
           <section>
             <h1>Inclusive Design</h1>
@@ -166,7 +166,7 @@
             </tr>
           </table>
           </p>
-          <p class="caption">&copy; 05/2011 <a href="//bit.ly/IDXPrinciples" target="_blank">Sandi Wassmer</a></p>
+          <p class="filename">&copy; 05/2011 <a href="//bit.ly/IDXPrinciples" target="_blank">Sandi Wassmer</a></p>
           <p><a href="//bit.ly/IDXPrinciples" target="_blank">bit.ly/IDXPrinciples</a></p>
           <aside class="notes">
             <ul>
@@ -356,7 +356,7 @@
           <!-- How //-->
           <h3>Structure in a way that makes sense</h3>
           <ul>
-            <li class="fragment">Use symantic markup, <a href="//bit.ly/IDXSymBBC" data-fragment-index="2" class="fragment" target="_blank">bit.ly/IDXSymBBC</a></li>
+            <li class="fragment">Use symantic markup, <a href="//bit.ly/IDXSymBBC" data-fragment-index="2" target="_blank">bit.ly/IDXSymBBC</a></li>
             <li class="fragment">Use progressive design to deliever experience</li>
             <li class="fragment">Prioritize what needs to be loaded</li>
           </ul>
@@ -577,20 +577,24 @@
 
 				transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-          { src: 'plugin/notes/notes.js', async: true },
-					{ src: 'lib/js/line-numbers.js', async: false },
-          { src: 'lib/js/gif-loader.js', async: true},
-          { src: 'lib/js/captions-aside.js', async: false},
+				// More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
           { src: 'plugin/markdown/marked.js' },
-          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
           { src: 'plugin/notes/notes.js', async: true },
-          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          // Custom plugins.
+          { src: 'plugin/line-numbers/line-numbers.js', async: false },
+          { src: 'plugin/set-aside/set-aside.js', async: false },
+          { src: 'plugin/gif-reloader/gif-reloader.js', async: false}
+        ]
+      });
+
+      Reveal.addEventListener( 'ready', function() {
+        if (window.location.search.match( /print-pdf/gi )) {
+          window.setTimeout(addLineNumbers, 1000);
+        }
+      });
 
 		</script>
 
