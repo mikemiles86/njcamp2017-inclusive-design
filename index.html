@@ -58,7 +58,7 @@
     </div>
 
 			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides" data-skip-types="live" data-captions-aside>
+			<div class="slides" data-skip-types="print">
         <section>
           <section>
             <h1>Inclusive Design</h1>
@@ -132,10 +132,19 @@
               <li>Patricia. Inds Designer. Dess as old.</li>
             </ul>
           </aside>
-          <p class="caption">The idea of removing as many barriers as possible in architecture and design. Making access easier for everyone. (disabilities or not)</p>
+          <p class="caption">Founded and pushed the idea of universal design in the architecture and design of public spaces. Lowering barriers to make those spaces as usable by as many people as possible.</p>
         </section>
-        <section data-transition="convex" data-background-image="images/sidewalk.jpg">
-          <p class="overlay-text caption">The sloped curb helps with accessibility, but also benefits others. People with strollers, carts, not paying attention, etc...</p>
+        <section data-transition="convex" data-skip="live">
+          <img data-src="images/sidewalk.jpg" class="screenshot" alt="sloped curb" />
+          <p class="filename">The sloped curb is a result of barrier free/universal desighn. It helps those with accessibility issues, but also beyond. Parents with strollers, delievery people, even people distracted by a text on their cellphone.</p>
+        </section>
+        <section data-transition="convex" data-skip="print" data-background-image="images/sidewalk.jpg">
+          <aside class="notes">
+            <ul>
+              <li>who was it built for?</li>
+              <li>who does it benefit?</li>
+            </ul>
+          </aside>
         </section>
         <section data-transition="convex">
           <!-- How //-->
@@ -235,7 +244,7 @@
             </ul>
           </aside>
         </section>
-        <section data-transition="convex" data-skip-types="print" data-background-image="images/jet.jpeg">
+        <section data-transition="convex" data-skip="print" data-background-image="images/jet.jpeg">
           <aside class="notes">
             <ul>
               <li>Todd Rose harvd prof.</li>
@@ -244,6 +253,10 @@
               <li>Refused avg. Design for edges.</li>
             </ul>
           </aside>
+        </section>
+        <section data-transition="convex" data-skip="live">
+          <img data-src="images/jet.jpeg" alt="Mig-15 fighter jet" class="screenshot" />
+          <p class="caption">In 1952 the Air force had a problem, their new jets were not performing well. The issue? The cockpit was designed for the "average" pilot, for someone who did not exist. It was not until they designed to accomidate the actual differences of pilots did performance improve.</p>
         </section>
         <section data-transition="convex" data-background-image="images/snowflakes_blur.jpg">
           <h3>The Myth of Average</h3>
@@ -268,7 +281,7 @@
         <section data-transition="convex" data-background-image="images/snowflakes_blur.jpg">
           <h3>Plan beyond the average user</h3>
           <img class="no-border" data-src="images/beyond_average_user_graph.png" />
-          <p class="caption">Planning for unique users (outliers), means capturing everyone in between.</p>
+          <p class="caption">Planning for unique users (outliers) and their differences, means capturing everyone in between.</p>
         </section>
         <section data-transition="convex" data-background-image="images/snowflakes_blur.jpg">
           <h3>Create personas with limitations</h3>
@@ -309,8 +322,13 @@
             <li class="fragment">Create an impact map of expected behaviors</li>
           </ul>
           <img data-src="images/impact_map.jpg" alt="Example of an impact map" class="fragment screenshot" />
+          <p class="filename">
+            <cite>&copy; <a href="//www.dkrimmer.de/2014/11/21/how-to-make-an-impact-with-your-software-product" target="_blank">Dominic Krimmer</cite>
+            <a href="//www.dkrimmer.de" target="_blank">www.dkrimmer.de</a>
+          </p>
+          <p class="caption"><br />Plan out the journey you want users to have. Base it on the real behaviors they will take and how they can reach your intended endpoint.</p>
         </section>
-        <section data-transition="convex" data-skip-types="print"  data-background-image="images/snowflakes_color.jpg">
+        <section data-transition="convex" data-skip="print"  data-background-image="images/snowflakes_color.jpg">
           <h3 class="overlay-text">We believe that no user is average</h3>
           <aside class="notes">
             <ul>
@@ -341,7 +359,7 @@
             <tr>
               <td style="width:51%;background:#99ccff;text-align:center">mobile</td>
               <td style="width:42%;background:#003366;text-align:center">desktop</td>
-              <td>oth</td>
+              <td style="font-size:50%">other</td>
             </tr>
           </table>
           <p style="font-size:50%">Data Source: <a href="//www.slideshare.net/kleinerperkins/internet-trends-v1/14-14Internet_Usage_Engagement_Growth_Solid11" target="_blank">www.slideshare.net/kleinerperkins/internet-trends-v1/14-14Internet_Usage_Engagement_Growth_Solid11</a></p>
@@ -352,6 +370,7 @@
               <li>Users who cannot load much data</li>
             </ul>
           </aside>
+          <p class="caption">Only a few years ago we were asking clients if they wanted a mobile site. Now we tell them they need a responsive site. The market changed. The same thing is happening for accessibility, we need to tell clients they have to plan this way.</p>
         </section>
         <section data-transition="convex" data-background-image="images/coffee_break_blur.jpg">
           <h3>Average global internet speed: 5.6Mbps</h3>
@@ -379,6 +398,7 @@
               <li>What do we need to deliver to users?</li>
             </ul>
           </aside>
+          <p class="caption">If you just build for South Korea, people in Mali are going to have a poor expirence. However, if you plan and build for people in Mali then everyone is going to have a positive experience.</p>
         </section>
         <section data-transition="convex" data-background-image="images/coffee_break_blur.jpg">
           <!-- How //-->
@@ -397,7 +417,11 @@
             </ul>
           </aside>
         </section>
-        <section data-transition="convex" data-background-image="images/google.png">
+        <section data-transition="convex" data-skip="print" data-background-image="images/google.png">
+        </section>
+        <section data-transition="convex" data-skip="live">
+          <img data-src="images/google.png" alt="Google" class="screenshot" />
+          <p class="caption">Google does not care about how your website looks. They care about the markup and being able to readers your content in the correct order. As do people with screen readers. If you plan for them, then you plan for better SEO</p>
         </section>
         <section data-transition="convex" data-background-image="images/coffee_break_blur.jpg">
           <h3>Artificially limit yourself</h3>
@@ -407,7 +431,7 @@
             <li class="fragment">Can you navigate without a mouse?</a></li>
           </ul>
         </section>
-        <section data-transition="convex" data-background-image="images/coffee_break_color.jpeg">
+        <section data-transition="convex" data-skip="print" data-background-image="images/coffee_break_color.jpeg">
           <h3 class="overlay-text">We believe that every user deserves equal access</h3>
           <aside class="notes">
             <ul>
@@ -431,13 +455,17 @@
             </ul>
           </aside>
         </section>
-        <section data-transition="convex" data-background-image="images/boston_gov.png" data-background-size="100%" data-background-position="top">
+        <section data-transition="convex" data-skip="print" data-background-image="images/boston_gov.png" data-background-size="100%" data-background-position="top">
           <aside class="notes">
             <ul>
               <li>Restructed content</li>
               <li>Whom is accessing?</li>
             </ul>
           </aside>
+        </section>
+        <section data-transition="convex" data-skip="live">
+          <img data-src="images/boston_gov.png" alt="boston.gov" class="screenshot" />
+          <p class="caption">The new boston.gov website was redesigned and the content was reorganized with real users in mind.</p>
         </section>
         <section data-transition="convex" data-background-image="images/pen-writing-notes-studying-blur.jpg">
           <blockquote>
@@ -476,8 +504,12 @@
             </ul>
           </aside>
         </section>
-        <section data-background-image="images/hemingwayapp.com.png" data-background-position="top">
+        <section data-background-image="images/hemingwayapp.com.png" data-transition="convex" data-skip="print" data-background-position="top">
 
+        </section>
+        <section data-transition="convex" data-skip="live">
+          <img data-src="images/hemingwayapp.com.png" class="screenshot" alt="hemingwayapp.com" />
+          <p class="caption">Tools like <a href="//hemingwayapp.com" target="_blank">hemingwayapp.com</a> can help you write clear, direct and meaningful content. A readability score of "Grade 6" means the content is engaging enough for advanced users, but clear and inviting enough for new users.</p>
         </section>
         <section data-transition="convex" data-background-image="images/pen-writing-notes-studying-blur.jpg">
           <h3>Inform and guide</h3>
@@ -487,9 +519,13 @@
             <li class="fragment">Provide contextual relations</li>
           </ul>
         </section>
-        <section data-background-image="images/boston_gov_context.png" data-background-position="top">
+        <section data-transition="convex" data-background-image="images/boston_gov_context.png" data-skip="print" data-background-position="top">
         </section>
-        <section data-transition="convex" data-background-image="images/pen-writing-notes-studying-color.jpg">
+        <section data-skip="live" data-transition="convex">
+          <img data-src="images/boston_gov_context.png" class="screenshot" alt="highlited contextual sections of boston.gov" />
+          <p class="caption">The new boston.gov website feature contextually linked sections such as street cleaning and tow lots.</p>
+        </section>
+        <section data-transition="convex" data-skip="print" data-background-image="images/pen-writing-notes-studying-color.jpg">
           <h3 class="overlay-text">We believe in providing understandable content to every user</h3>
           <aside class="notes">
             <ul>
@@ -521,7 +557,11 @@
             </blockquote>
              <p class="fragment" data-fragment-index="1"><a href="//bit.ly/IDXGender" target="_blank">bit.ly/IDXGender</a></p>
         </section>
-        <section data-transition="convex" data-background-image="images/drupal_org_account_edit.png" data-background-position="bottom" data-background-size="100%">
+        <section data-transition="convex" data-skip="print" data-background-image="images/drupal_org_account_edit.png" data-background-position="bottom" data-background-size="100%">
+        </section>
+        <section data-transition="convex" data-skip="live">
+          <img data-src="images/drupal_org_account_edit.png" alt="Drupal.org account gender question options" class="screenshot" />
+          <p class="caption">Drupal.org give users multiple options on how to identify their geneder, or not select an option at all.</p>
         </section>
         <section data-transition="convex" data-background-image="images/parachute-jump-blur.jpg">
           <h3>Collect only the information you need</h3>
@@ -531,7 +571,11 @@
             <li class="fragment">Ask "Why should users give this to us?"</li>
           </ul>
         </section>
-        <section data-transition="convex" data-background-image="images/pintrest_signup.png">
+        <section data-transition="convex" data-skip="print" data-background-image="images/pintrest_signup.png">
+        </section>
+        <section data-transition="convex" data-skip="live">
+          <img data-src="images/pintrest_signup.png" class="screenshot" alt="Pintrest account signup" />
+          <p class="caption">Pintrest not only gives users options, but also explains to the user why they collect gender information.</p>
         </section>
         <section data-transition="convex" data-background-image="images/parachute-jump-blur.jpg">
           <h3>Be responsible with data</h3>
@@ -540,7 +584,7 @@
             <li class="fragment">Explain how the data is protected</li>
             <li class="fragment">Give users control of their data</li>
         </section>
-        <section data-transition="convex" data-background-image="images/parachute-jump-color.jpeg">
+        <section data-transition="convex" data-skip="print" data-background-image="images/parachute-jump-color.jpeg">
           <h3 class="overlay-text">We believe in providing every user with trust and respect</h3>
           <aside class="notes">
             <ul>
@@ -562,8 +606,9 @@
             <li>Every user deserves our trust and respect</li>
           </ol>
           </p>
+          <p class="caption">If we agree to these four pillars when building our applications, then we have to think differently.</p>
         </section>
-        <section data-transition="fade">
+        <section data-transition="fade" data-skip="print">
           <h3>Four Pillars of Inclusive Design</h3>
           <p>
           <ol style="list-style-type: upper-roman">
@@ -576,20 +621,44 @@
         </section>
         <section data-transition="convex">
           <h2 class="overlay-text">We make a positive impact on as many people as possible</h2>
+          <p class="caption">And if we follow the four pillars, then we will reach a wider audience.</p>
         </section>
       </section>
       <section>
         <h1>Resources</h1>
-        <p>
-          <a href="//bit.ly/IDXNed16" target="_blank">bit.ly/IDXNed16</a>
-          <br /><span class="filename">This presentation</span><br />
-          <a href="//bit.ly/IDXPrinciples" target="_blank">bit.ly/IDXPrinciples</a>
-          <br /><span class="filename">10 Principles of Inclusive Design by Sandi Wassmer</span><br />
-          <a href="//bit.ly/IDXAvgMyth" target="_blank">bit.ly/IDXAvgMyth</a><br />
-          <span class="filename">The Myth of Average by Todd Rose</span><br />
-          <a href="//bit.ly/IDXGender" target="_blank">bit.ly/IDXGender</a><br />
-          <span class="filename">Inclusive Design: Excluding No Gender by Sara Leren</span>
-      </p>
+        <table border="0" width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td style="width:50%;border:0;text-align:center">
+              <a href="//bit.ly/IDXNed16" target="_blank">bit.ly/IDXNed16</a>
+              <br /><span class="filename">This presentation</span>
+            </td>
+            <td style="width:50%;border:0;text-align:center">
+              <a href="//bit.ly/IDXPrinciples" target="_blank">bit.ly/IDXNed16Slides</a>
+              <br /><span class="filename">Presentation Slides</span>
+            </td>
+          </tr>
+          <tr>
+            <td style="width:50%;border:0;text-align:center">
+              <a href="//bit.ly/IDXPrinciples" target="_blank">bit.ly/IDXPrinciples</a>
+              <br /><span class="filename">10 Principles of Inclusive Design</span>
+            </td>
+            <td style="width:50%;border:0;text-align:center">
+              <a href="//bit.ly/IDXAvgMyth" target="_blank">bit.ly/IDXAvgMyth</a><br />
+              <span class="filename">The Myth of Average</span>
+            </td>
+          </tr>
+          <tr>
+            <td style="width:50%;border:0;text-align:center">
+              <a href="//bit.ly/IDXSemBBC" data-fragment-index="2" target="_blank">bit.ly/IDXSemBBC</a><br />
+              <span class="filename">BBC Semantic guidelines</span>
+            </td>
+            <td style="width:50%;border:0;text-align:center">
+              <a href="//bit.ly/IDXGender" target="_blank">bit.ly/IDXGender</a><br />
+              <span class="filename">Inclusive Design: Excluding No Gender</span>
+            </td>
+          </tr>
+        </table>
+
       </section>
       <section>
         <section>
@@ -599,11 +668,13 @@
         </section>
         <section data-transition="convex">
           <h2>I have a podcast!</h2>
-          <a href="//developingup.com" target="_blank">developingup.com</a>
+          <p><a href="//developingup.com" target="_blank">developingup.com</a></p>
+          <p><a href="//twitter.com/devuppodcast" target="_blank">@devuppodcast</a></p>
+          <p class="caption"><br />Explores the non-technical sides of being a developer.</p>
         </section>
         <section data-transition="convex">
           <h1>Thank You!</h1>
-          <p>Questions?</p>
+          <p data-skip="print">Questions?</p>
         </section>
       </section>
 			</div>
