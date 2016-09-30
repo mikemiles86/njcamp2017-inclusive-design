@@ -2,10 +2,11 @@
  * GLOBAL STYLES
  *********************************************/
 body {
-  background-size: 100% !important;
+  background-size: 109% !important;
   background-image: url('../../images/background.jpg') !important;
   background-position: center !important;
-  background-repeat: no-repeat !important;
+  background-attachment: scroll !important;
+  background-repeat: repeat-y !important;
 }
 
 .step-note {
