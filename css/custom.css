@@ -3,7 +3,7 @@
  *********************************************/
 body {
   background-size: 109% !important;
-  background-image: url('../../images/background.jpg') !important;
+  background-image: url('../images/background.jpg') !important;
   background-position: center !important;
   background-attachment: scroll !important;
   background-repeat: repeat-y !important;

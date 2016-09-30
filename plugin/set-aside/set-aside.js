@@ -28,9 +28,6 @@ function setAsideSkip(is_print) {
   if (is_print) {
     skip_types.push('print');
   }
-  else {
-    skip_types.push('present');
-  }
   // Loop through each type.
   for (var type in skip_types) {
     setAsideFindAndRemove("[data-skip*='" + skip_types[type] + "']");
