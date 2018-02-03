@@ -9,10 +9,10 @@ In this session we will talk about some of the ways to think about inclusive des
 
 ## Resources from this presentation
 
-https://bit.ly/IDXBad16
+https://bit.ly/NJCampIDX
 This presentation
 
-https://bit.ly/IDXBad16Slides
+https://bit.ly/NJCampIDXSlides
 Presentation Slides
 
 https://bit.ly/IDXPrinciples
